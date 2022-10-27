@@ -1,7 +1,9 @@
 # Links
 
 Homepage > https://deun.xyz/
+
 Discord > https://deun.xyz/discord
+
 Store > https://store.deun.xyz
 
 # INSTALLATION
@@ -13,5 +15,3 @@ Store > https://store.deun.xyz
    https://github.com/Mobius1/rprogress
 4. finished
 5. If you have any question, you can join my discord and open an ticket there.
-
-The client and server.lua are open source so you can edit the important stuff.
