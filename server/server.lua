@@ -1,6 +1,14 @@
 ESX = nil
 
-TriggerEvent('esx:getSharedObject', function(obj) ESX = obj end)
+function GetESX()
+  if Config.GetSharedObjectfunction == false then
+    TriggerEvent(Config.esxgetSharedObjectevent, function(obj) ESX = obj end)
+  else
+    ESX = exports["es_extended"]:getSharedObject()
+  end
+end
+
+GetESX()
 
 RegisterServerEvent("d-farmingzone:server:additem")
 AddEventHandler("d-farmingzone:server:additem", function(source, r)

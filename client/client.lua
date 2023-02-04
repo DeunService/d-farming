@@ -20,7 +20,11 @@ Source = GetPlayerServerId(PlayerId())
 
 Citizen.CreateThread(function()
   while ESX == nil do
-    TriggerEvent('esx:getSharedObject', function(obj) ESX = obj end)
+    if Config.GetSharedObjectfunction == false then
+      TriggerEvent(Config.esxgetSharedObjectevent, function(obj) ESX = obj end)
+    else
+      ESX = exports["es_extended"]:getSharedObject()
+    end
     Citizen.Wait(0)
   end
 

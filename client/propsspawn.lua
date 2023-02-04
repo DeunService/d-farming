@@ -185,6 +185,8 @@ function SpawnProps(v)
             Citizen.Wait(0)
             local Coords = GeneratePropCoords(v)
 
+            Wait(600)
+
             ESX.Game.SpawnLocalObject(v.prop, Coords, function(obj)
                 PlaceObjectOnGroundProperly(obj)
                 FreezeEntityPosition(obj, true)

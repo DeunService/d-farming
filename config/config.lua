@@ -2,6 +2,7 @@ Config = {}
 Config.Locale = 'en'
 
 Config.ESXLegacy = true
+Config.GetSharedObjectfunction = true
 
 Config.RadiusSpots = {
     {
